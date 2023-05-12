@@ -26,7 +26,9 @@ def mostrar_frutas():
  # Renderizar la página de frutas con la fruta seleccionada
     return render_template("frutas.html", fruta=fruta)
 
-
+@app.route("/volver", methods=['Post'])
+def volver():
+   return render_template("start_frutas.html")
 
 if __name__ == '__main__':
    app.run(debug=True)
