@@ -14,7 +14,8 @@
     Windows
 
     -py -m venv env
-    -env\scripts\activate.bat (Windows command line)-env\scripts\activate.ps1 (Windows PowerShell)
+    -env\scripts\activate.bat (Windows command line)
+    -env\scripts\activate.ps1 (Windows PowerShell)
 
     MacOs / Linux
     -python3 -m venv env
