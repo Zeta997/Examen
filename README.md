@@ -25,6 +25,6 @@
 
     pip install -r requirements.txt
 
-*5-* Ejecucion del programa  ```program.py```
+*5-* Ejecucion del programa  ```menu.py```
 
 *6-* Abrir navegador con la direccion que sale en el terminal.
