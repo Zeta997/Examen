@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-import Frutas
+import clases.Frutas as Frutas
 app = Flask(__name__,template_folder='html')
 
 @app.route("/", methods=['GET'])
