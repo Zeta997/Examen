@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Información de la Fruta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+</head>
+
+<body>
+    <fieldset>
+        <legend>Información de frutas</legend>
+        <div class="form-group row">
+            {% if fruta %}
+            <p><strong>Nombre:</strong> {{ fruta.nombre }}</p>
+            <p><strong>Cantidad:</strong> {{ fruta.cantidad }}</p>
+            {% if (fruta.Nombre == "Manzana") %}
+            <p><strong>Variedad:</strong> {{ fruta.variedad }}</p>
+            {% elif (fruta.Nombre== "Banana") %}
+            <p><strong>Madurez:</strong> {{ fruta.madurez }}</p>
+            {% elif (fruta.Nombre == "Naranja") %}
+            <p><strong>Dulzor:</strong> {{ fruta.dulzor }}</p>
+            {% endif %}
+            <p><strong>Descripcion:</strong> {{ fruta.descripcion() }}</p>
+            {% else %}
+            <p>La fruta seleccionada no fue encontrada en la lista.</p>
+            {% endif %}
+            <form >
+                <button href="start_frutas.html" type="submit" class="btn btn-primary">Mas frutas</button>
+            </form>
+        </div>
+    </fieldset>
+</body>
